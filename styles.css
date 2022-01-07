@@ -1,0 +1,64 @@
+@import url(//db.onlinewebfonts.com/c/1db29588408eadbd4406aae9238555eb?family=Consolas);
+
+@font-face {font-family: "Consolas"; src: url("//db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.eot"); src: url("//db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.woff") format("woff"), url("//db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.svg#Consolas") format("svg"); }
+
+body{
+    font-family: "Consolas";
+    background-color: white;
+    font-size: 1.2em;
+}
+
+div div{
+    background-color: rgb(241, 241, 241);
+}
+
+li {
+    list-style: none;
+    padding: 1em;
+}
+
+h2, h3, h4, h5 {
+    padding-left: 10px;
+    padding-top: 8px;
+    font-weight: normal;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.box {
+    margin: 5%;
+    height: 80%;
+    width: 80%;
+    background-color: grey;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    height: 100vh;
+    margin: 2em;
+}
+
+.sidebar {
+    padding: 40px;
+    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.visitors {
+    grid-row: 2 / 4;
+    grid-column: 2 / 5;
+}
+
+.data {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
